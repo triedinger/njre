@@ -40,7 +40,7 @@ Installs a JRE copy for the app
 | [options.type]         | <code>string</code> | <code>&quot;jre&quot;</code>     | Binary Type (`jre`/`jdk`)                                                                      |
 | [options.heap_size]    | <code>string</code> |                                  | Heap Size (`normal`/`large`)                                                                   |
 | [options.vendor]       | <code>string</code> |                                  | defaults to adoptopenjdk (`adoptopenjdk`/`eclipse`)                                            |
-
+| [cache]                | <code>boolean</code> | <code>false</code>              | true, to use a previously downloaded jre (expires after 2 days currently)
 **Example**  
 ```js
 const njre = require('njre')

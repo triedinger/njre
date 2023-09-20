@@ -7,6 +7,12 @@ describe("Install", () => {
     return njre.install();
   }).timeout(100000);
 
+  it("should install JRE with default options without throwing an error and using the previously downloaded file", () => {
+    return njre.install(undefined, {
+      cache: true
+    });
+  }).timeout(100);
+
   it("should install JRE with custom options without throwing an error", () => {
     return njre.install(11, {
       os: "aix",
